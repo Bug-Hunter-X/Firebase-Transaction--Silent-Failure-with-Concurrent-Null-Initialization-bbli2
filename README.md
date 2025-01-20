@@ -1,0 +1,3 @@
+# Firebase Transaction Concurrency Bug
+
+This repository demonstrates a subtle concurrency issue with Firebase transactions when initializing a counter from a null value.  Multiple clients attempting this concurrently may result in unexpected behavior, as only one client's initialization will succeed.  The solution involves using a more robust initialization strategy, such as a server-side counter or a conditional update operation.
